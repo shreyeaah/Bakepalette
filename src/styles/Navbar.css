@@ -1,0 +1,169 @@
+/* Top Thin Navbar */
+.topnav {
+  width: 100%;
+  height: 40px; 
+  background-color: #f4ebe3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  flex-wrap: wrap; /* Allows wrapping if needed */
+  text-align: center;
+}
+
+.topnav p {
+  margin: 0;
+  font-family: "Brush Script MT", cursive;
+  font-size: 20px;
+  color: #67171f;
+  max-width: 100%; /* Prevents text from breaking */
+  white-space: nowrap; /* Prevents line breaks */
+  margin-left: 50%;
+}
+.topnav-left{
+  flex: 50%;
+  height: 100%;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ 
+  
+}
+
+
+
+/* Search Bar */
+.search-bar {
+  padding: 5px 10px;
+  border: 1px solid #67171f;
+  border-radius: 15px;
+  outline: none;
+  width: 180px;
+}
+
+/* Top Navbar Right Section */
+.topnav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap; /* Prevents icons from squeezing */
+  margin-left: auto;
+}
+
+/* Bootstrap Icons */
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 20px;  /* Adjust icon size */
+  color: #67171f;
+}
+
+.icon-button:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+}
+/* Main Navbar */
+.navbar {
+  width: 100%;
+  height: 90px;
+  background-color: #67171f;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar .leftnav {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 150px;
+}
+
+.navbar .leftnav img {
+  width: 100px; /* Increase width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+.navbar .rightnav {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar a {
+  color: #f4ebe3;
+  text-decoration: none;
+  margin: 20px;
+  white-space: nowrap;
+}
+
+/* Responsive */
+@media only screen and (max-width: 900px) {
+  .navbar .rightnav a {
+    display: none; /* Hide all links */
+  
+  }
+
+  .navbar .rightnav button {
+    display: block; /* Show the reorder button */
+  }
+
+  .topnav {
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .topnav-left {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .topnav-right {
+    width: 100%;
+    justify-content: center;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .navbar .rightnav a {
+    display: none; /* Hide all options */
+  }
+
+  .navbar .rightnav button {
+    display: block; /* Show reorder button */
+  }
+
+  .navbar .rightnav .hiddenLinks {
+    display: none; /* Keep hidden links hidden */
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar .rightnav button {
+    display: none; /* Hide reorder button on larger screens */
+  }
+
+  .navbar .rightnav a {
+    display: inline-block; /* Make the links visible again */
+  }
+
+  .hiddenLinks {
+    display: none; /* Keep hidden links hidden */
+  }
+}
