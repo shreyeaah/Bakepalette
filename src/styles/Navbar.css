@@ -1,6 +1,6 @@
 /* Top Thin Navbar */
 .topnav {
-  width: 100%;
+  width: 1263px;
   height: 40px; 
   background-color: #f4ebe3;
   display: flex;
@@ -67,7 +67,7 @@
 }
 /* Main Navbar */
 .navbar {
-  width: 100%;
+  width: 1263px;
   height: 90px;
   background-color: #67171f;
   display: flex;
@@ -101,6 +101,77 @@
   text-decoration: none;
   margin: 20px;
   white-space: nowrap;
+}
+.home{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.headercontainer{
+  width: 1263px;
+  margin-left: 50px;
+  height: 600px;
+  margin: 0%;
+  margin-top: 0%;
+  padding: 0px;
+}
+
+.headercontainer h1{
+   justify-content: center;
+   text-align: left;
+   font-size: 50px;
+   height: 60px;
+   font-weight: 50;
+   color: black;
+   padding: 0;
+   margin: 0 ;   
+   
+}
+
+ 
+
+.headercontainer Button{
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #121619;
+  height: 50px;
+  width: 180px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding-left: 0%;
+  align-self:flex-start ;
+  float: left;
+  
+}
+.headercontainer Button:hover{
+  background-color: #07090a;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+ 
+.secondsection{
+  width: 100%;
+  height: 600px;
+  
+}
+.leftsecond{
+  width: 50%;
+
+}
+.rightsecond{
+  width: 50%;
+  float: right;
+
 }
 
 /* Responsive */
